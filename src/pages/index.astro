@@ -1,18 +1,20 @@
 ---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type ="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type ="image/svg+xml" href="https://kamil.gr/avatar.jpg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content = {Astro.generator} >
     <title>Astro balls yas yas</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Header />
     <h1>Shaggy balls!</h1>
+    <Footer />
   </body>
 </html>
