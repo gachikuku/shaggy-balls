@@ -1,5 +1,18 @@
 ---
-const pageTitle = "About these balls";
+const pageTitle = "About the balls";
+
+const identity = {
+  firstName: "Noman",
+  country: "Greece",
+  occupation: "Freelancer",
+  hobbies: ["jiu-jitsu","climbing","gym"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "Astro", "python"];
+
+const happy = true;
+const finished = false;
+const goal = 6;
 ---
 
 <html lang="en">
@@ -22,6 +35,26 @@ const pageTitle = "About these balls";
         <h2>Andd this is my shaggy-balls site, don't ask me astro cli came up with it.</h2>
             <p>This is a tutorial so please bear with me </p>
             <p>Yes yes i use git add . because im a chad then git commit with an -m because im a giga chad and then i git push dat sh****t</p>
+
+    <p>Here are a few facts about me:</p>
+    <ul>
+      <li>My name is {identity.firstName}.</li>
+      <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+      {identity.hobbies.length >= 2 &&
+        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+      }
+    </ul>
+    <p>My skills are:</p>
+    <ul>
+      {skills.map((skill) => <li>{skill}</li>)}
+    </ul>
+
+    {happy && <p>I am happy to be learning Astro!</p>}
+
+    {finished && <p>I finished this tutorial!</p>}
+
+    {goal === 6 ? <p>My goal is to finish in 6 days.</p> : <p>My goal is not 6 days.</p>}
+
   </body>
 
 </html>
