@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My First shaggy ball Post'
 pubDate: 2022-07-01accomplished
 description: 'This is the first post of my new shaggy balls blog.'
@@ -9,8 +10,6 @@ image:
 tags: ["astro", "blogging", "learning in public", "shaggy-balls", "shaggy", "balls"]
 ---
 # My First Blog Post
-
-Published on: 2022-07-01
 
 Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
