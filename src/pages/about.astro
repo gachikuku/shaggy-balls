@@ -1,16 +1,13 @@
 ---
-import '../styles/global.css';
-import '../components/Header.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About the balls";
 
 const identity = {
-  firstName: "mother-finder",
-  country: "Beach-land",
-  occupation: "seed-planter",
-  hobbies: ["balls-deeping","ass-staring","touf-touf"],
+firstName: "mother-finder",
+           country: "Beach-land",
+           occupation: "seed-planter",
+           hobbies: ["balls-deeping","ass-staring","touf-touf"],
 };
 
 const skills = ["touf-touf", "ass-staring", "ass-slapping", "ass-judging", "balls-clapping (yes for real!)"];
@@ -24,18 +21,7 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
-<html lang="en">
-
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type ="image/svg+xml" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content = {Astro.generator} >
-    <title>Astro balls yas yas</title>
-  </head>
-
-  <body>
-    <Header />
+    <BaseLayout>
     <h1>{pageTitle}</h1>
 
     <style define:vars={{skillColour, fontWeight, textCase}}>
@@ -77,11 +63,4 @@ const textCase = "uppercase";
 
     {goal === 3 ? <p>production ready in 3 months</p> : <p>My goal is not 3 days.</p>}
 
-    <Footer />
-
-      <script>
-        import "../scripts/menu.js";
-      </script>
-  </body>
-
-</html>
+    </BaseLayout>
