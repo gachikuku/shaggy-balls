@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
-import '../components/Navigation.astro';
-import Navigation from '../components/Navigation.astro';
+import '../components/Header.astro';
+import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const pageTitle = "About the balls";
@@ -35,7 +35,7 @@ const textCase = "uppercase";
   </head>
 
   <body>
-    <Navigation />
+    <Header />
     <h1>{pageTitle}</h1>
 
     <style define:vars={{skillColour, fontWeight, textCase}}>
