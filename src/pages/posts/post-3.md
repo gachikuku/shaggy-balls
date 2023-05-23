@@ -9,4 +9,4 @@ image:
 pubDate: 2022-07-15
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-It's extra VIRGIN olive oil smoooth going with that mediterrenean vibe iniitt.
+It's extra VIRGIN olive oil smoooth going with that mediterrenean vibe iniitt. yas yas 
